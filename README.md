@@ -4,7 +4,7 @@
 # 先clone下来
 
 
-git clone https://github.com/8-diagrams/usdtbillmon.git
+git clone https://github.com/zhongziso/usdtbillmon.git
 
 如果没有装git ，请 yum -y install git 安装
 
