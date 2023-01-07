@@ -1,7 +1,22 @@
 # usdtbillmon
  trc20 usdt bill monitor
+ 
+#安装docker
 
-# 先clone下来
+apt update
+apt install curl vim wget gnupg dpkg apt-transport-https lsb-release ca-certificates
+curl -sS https://download.docker.com/linux/debian/gpg | gpg --dearmor > /usr/share/keyrings/docker-ce.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-ce.gpg] https://download.docker.com/linux/debian $(lsb_release -sc) stable" > /etc/apt/sources.list.d/docker.list
+apt update
+apt-get install docker-ce docker-ce-cli containerd.io
+systemctl enable docker
+systemctl start docker
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+把部署目录clone 下来
 
 
 git clone https://github.com/zhongziso/usdtbillmon.git
