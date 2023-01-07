@@ -1,6 +1,20 @@
 # usdtbillmon
  trc20 usdt bill monitor
  
+ 1 创建机器人
+
+找到 @botfather
+
+输入 /start  指令
+
+点击 /newbot
+   
+根据提示，得到机器人的 key ，复制出来后面使用
+
+2. 设置运行环境
+
+2.1 安装docker 和 docker compose
+ 
 #安装docker
 
 apt update
@@ -24,7 +38,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 
-把部署目录clone 下来
+2.2把部署目录clone 下来
 
 
 git clone https://github.com/zhongziso/usdtbillmon.git
